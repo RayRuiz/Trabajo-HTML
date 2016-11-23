@@ -159,7 +159,72 @@
           Representa una oportunidad de salto de linea, es decir, un punto sugerido de envoltura donde el texto de multiples lineas puede ser dividido para mejorar su legibilidad.
         </ol>
       <li>Hiperenlace </li>
+      Sirven para acceder desde una pagina a otra o a otro recurso disponible.
+       <ol>
+         <li>Externo</li>
+         El atributo href contiene la informacion de donde se encuentra el recurso. En este caso en un dominio externo.
+          <pre><<b>a href="<u>http://wwww.undominio.com</u>" target="_blank"><u>Undominio</u><</b>/a></pre>
+
+         <li>Local</li>
+         En este caso href apunta a una pagina html que eseta en el mismo directorio que el documento que contiene el enlace.
+         <pre> <<b>a href="<u>pagina2.html</u>" target="_blank"><u>Ver esto</u> <</b>/a></pre>
+         <li>Interno</li>
+         En este caso href apunta a una posicion dentro del documento en el que esta el enlace.
+         <pre> <<b>a href="<u>#ancla1</u>"><u>Ir a..</u><</b>a> </pre>
+      </ul>
+      <p> Estamos usando el atributo <b>target</b> que indica donde se cargara el documento o recurso al que hacemos referencia.
+            y el valor <b>_blank</b> indica que cargemos el recurso en una nueva ventana del navegador.
+      </p>
+    <hr>
+    <h2><center>Contenido Encajado:Imagenes</center></h2>
+    <p>Vamos a insertar imagenes dentro de una pagina web, para poner una imagen el codigo es:</p>
+    <pre>
+          <<b>img src="<u>imagen.jpg</u>"</b>>
+    </pre>
+    <p>La etiqueta <<b>img</b>> tiene varias propiedas. El ancho y alto (width,height) se coloca en pixeles y deben corresponder al tamaño original
+      de la imagen para que no se distorsione.
+    </p>
+    <pre>
+          <<b>img src="<u>imagen.jpg</u>"  width="<u>10</u>" height="<u>10</u>"</b>>
+    </pre>
+    <p> Tambien podemos usar un mapa de imagenes, es decir, podemos hacer que diferentes partes de una imagen tengan enlaces que nos permitan a ir a diferentes destinos.</p>
+     <ul>
+      <li>El tag map:</li>
+      Aqui tenemos que poner la etiqueta <<b>map name="<u>ejemplo1</u>"</b>> <<b>/map</b>>, aqui añadimos el nombre del mapa dentro del mapa van los demas atributos.
+      <li>Atributo area:</li>
+      El mapa de imagenes lleva un area dentro de la cual podremos pinchar para dirigirnos al destino que hayamos preestablecido <<b>area</b>>, dentro de area iran otros atributos.
+      <li>Atributo shape:</li>
+      Estre atributo va dentro de area y nos indica que tipo de area es.
+        <ol>
+          <li>shape="rect":</li>
+           Este tipo de area crea un mapa de imagen rectangular. Para definir la zona que incluira este mapa deberemos definir
+          la esquina superior del area y la esquina inferior derecha.
+          <li>shape="circle":</li>
+          Este tipo de area crea un mapa de imagen circular. Nosotros solo debemos indicarle el centro de la circuferencia y el radio del mismo.
+          <li>shape="poly":</li>
+          Este tipo de area es la mas versatil de todas, ya que nos permite crear una zona personalizada. Debemos indicar los diferentes puntos de poligono y de una forma ordenada.
+        </ol>
+      <li>Atributo coords:</li>
+      Aqui escribimos las coordenadas del area que vayamos a usar se escribe: coords="x,x,x,x", entiendo que cada "x" representa un punto de la imagen.
+        <ol>
+          <li>rect:</li>
+          "x-izq,y-sup,x-dcha, y-inf"
+          <li>circle</li>
+          "x-centro,y-centro,radio"
+          <li>poly</li>
+          "x1,y2,x2,y2,....,xN,yN"
+        </ol>
+      <li>Usemap:</li>
+      Aqui indicamos que imagen es la que llevara el mapa, este atributo se escribe: usemap="#x", siendo x el nombre del mapa de la imagen.
     </ul>
+  <pre>
+        <<b>img usemap="#mapa"</b>>
+        <<b>map name="mapa"</b>>
+          <<b>area shape="<u>    </u>" coords="x,x,x,x"</b>>
+        <<b>/map</b>>
+  </pre>
+  <hr>
+<h2><center>Tablas</center></h2>
 
 </body>
 </html>
