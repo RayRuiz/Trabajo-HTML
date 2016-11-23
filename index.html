@@ -9,8 +9,157 @@
   <header>
     <h1> FUNDAMENTOS HTML-5 </h1>
   </header>
-  <footer>
-    Trabajo para Lenguajes de Marcas en Github
-  </footer>
+    <h2><center>¿Que es HTML?</center></h2>
+      <p> HTML corresponde a las siglas en ingles de "HiperText Marck Lenguaje" y se puede traducir al español como "Lenguaje de Marcado de Hipertexto".
+      Es un lenguaje de marcado diseñado para estructurar textos y presentarlos en forma de hipertexto, que es el formato estandara de las paginas web.
+      Gracias a Internet y a los navegadores web, el HTML se ha convertido en uno de los formatos mas populares y faciles de aprendes que existen para la elaboracion
+      de documentos para web. Es un lenguaje de sentencias-etiquetas- de las cuales me indican que operaciones se van a realizar con el texto o con los atributos que
+      se esten manejando con ese sentencia-etiqueta-, la verdad estas secuencias son muy necesarias para el diseño de una pagina web ya que cada una de esas sentencias
+      le indican a intert como esta compuesto la estructura de cualquier Web.
+    </p>
+    <hr>
+    <h2><center> Etiqueta de HTML</center></h2>
+      <p>Las etiquetas tienen una estrctura simple. Comienza por un caracter <, y terminan con un caracter >. Entre los caracteres <> esta el nombre de la etiqueta,
+        y quizas algunos atributos dependiendo de la etiqueta.Su forma general es:
+      </p>
+      <pre>     <_nombre de la etiqueta atributo1="valor1" ...></pre>
+    <hr>
+    <h2><center> Archivo HTML </center></h2>
+      <p> Para hacer un archivo HTML correctamente: hay que identificarlo como archivo HTML encerrandolo entre etiquetas <<b>!doctype html</b>> al principio.
+        Despues se pone <<b>html lang="es"</b>> para indentificar al documento HTML que esta en lenguaje español, esta etiqueta contiene un <<b>head</b>> que te permite
+        almacenar cierta informacion sobre el documento en si, tambien contiene <<b>body</b>>,dentro de esta tiene todo el contenido de la pagina que se ve a travez del
+        navegador web, despues de estas dos etiquetas se cierra todo con <<b>/html</b>>. Su estructura seria asi:
+      </p>
+      <pre>    <!doctype html>
+                 <<b>html lang="es"</b>>      Inicio
+                      <<b>head</b>>           Cabecera
+                      <<b>/head</b>>
+                      <<b>body</b>>           Cuerpo
+                      <<b>/body</b>>
+                 <<b>/html</b>>               Fin
+      </pre>
+      <hr>
+      <h2><center> Metadatos</center> </h2>
+        <p> Las etiquetas de matadatos se deben añadir entre las etiquetas <<b>head</b>> </<b>head</b>> del codigo. Estas etiquetas contienen la informacion que se muestran
+          en las paginas de resultados de los diferentes buscadores. Los metadatos html mas habituales e importantes son:
+       </p>
+        <pre><ul>
+              <li>Title:</li>     <<b>title</b>><u>    </u> <<b>/title</b>> El titulo de la pagina que sale en el buscador.
+              <li>Charset</li>    <<b>meta charset="<u>utf-8</u>"</b>> Especifica la codificacion de caracteres para el documento.
+              <li>Name</li>      <<b>meta name="<u>author</u>" content="<u>Ray</u></b>>" Ponemos el nombre del autor de la pagina.
+        </ul>
+      </pre>
+      <hr>
+      <h2><center> Articulo vs Seccion </center></h2>
+       <p> Una seccion usa las etiquetas <<b>section</b>  <<b>/section</b>>, esta pensada para agrupar los apartados del contenido del documento.
+           Una seccion puede contener varias secciones dentro tambien. Un articulo usa las etiquetas <<b>article</b>>  <<b>/article</b>>, esta pensado para agrupar
+           el contenido de la pagina que forma una unidad en si misma desde el punto de vista tematico, puede contener mas etiquetas de articulo en su interior.
+           Un elemento <<b>section</b>> puede contener elementos  <<b>article</b>> y viceversa.
+       <pre>
+             <<b>article</b>>                       <<b>article</b>>
+                <<b>section</b>>                       <<b>section</b>>
+                <<b>/section</b>>                          <<b>article</b>>
+                <<b>section</b>>                           <<b>/article</b>>
+              <<b>/article</b>>                        <<b>/section</b>>
+                                             <<b>/article</b>>
+       </pre>
+      <hr>
+      <h2><center> Secciones </cener></h2>
+        <p>Las secciones son las partes tematicas en las que se puede dividir el contenido de una pagina web.
+          Estas etiquetas van entre las etiquetas <<b>body</b>>  <<b>/body</b>> y son:
+        </p>
+          <ul>
+            <li>Encabezamiento:</li>
+             La etiqueta <<b>header</b>>  define la cabecera de una pagina o seccion. Usualmente contiene un logotipo,el titulo del sitio Web y una tabla de
+             navegacion de contenidos.
+            <li>Navegacion:</li>
+            La etiqueta <<b>nav</b>> define una seccion que solamente contiene enlaces de navegacion.
+            <li>Titulos:</li>
+            Las etiquetas <<b>h1</b>>,<<b>h2</b>>.<<b>h3</b>>,<<b>h4</b>>,<<b>h5</b>> y <<b>h6</b>> implementan seis niveles de cabeceras de documentos,
+            <<b>h1</b>> es la de mayor y <<b>h6</b>> es la de menor importancia.
+            <li>Lateral:</li>
+            La etiqueta <<b>aside</b>> define algunos contenidos vagamente relacionados con el resto del contenido de la pagina.
+            <li>Pie:</li>
+            La etiqueta <<b>footer</b>> define el pie de una pagina o seccion, suele contener un mensaje de derechos de autoria,enlaces a informacion lega o
+            direcciones para dar informacion.
+            <li>Direccion:</li>
+            La etiqueta <<b>adress</b>> define una seccion que contiene informacion de contacto.
+         </ul>
+      <pre>
+          <<b>header</b>>
+              <<b>h1</b>>     <<b>/h1</b>>
+              <<b>h2</b>>     <<b>/h2</b>>
+          <<b>/header</b>>
+                  <<b>nav</b>>
+                  <<b>/nav</b>>
+          <<b>footer</b>>
+                  <<b>adress</b>>
+                  <<b>/adress</b>>
+          <<b>/footer</b>>
+      </pre>
+      <hr>
+      <h2><center>Agrupaciones</center></h2>
+      <p> Hay diferentes tipos de agrupaciones, pero las mas importantes son: </p>
+      <ul>
+        <li> Parrafos:</li>
+        Las etiquetas <<b>p</b>> <<b>p</b>> definen una parte que debe mostrarse como un parrafo.
+        <li> Texto perfomateado </li>
+        Las etiquetas <<b>pre</b>> <<b>pre</b>> indican que su contenido esta preformateado y que este formato debe ser preservado.
+        <li> Listas:</li>
+        <ol>
+          <li> Ordered List: <<b>ol</b>> </li>
+          Define una lista ordenada de articulos.
+          <li>Unordered List: <<b>ul</b>> </li>
+          Define una lista de articulos sin orden.
+          <li>List Item: <<b>li</b>> </li>
+          Define un articulo de una lista.
+          <li>Definition List: <<b>dl</b>> </li>
+          Define una lista de definiciones,es decir, una lista de terminos y sus deficiones asociadas.
+          <li>Definition Term: <<b>dt</b>> </li>
+          Representa un termino definido por el siguiente <<b>dd</b>>.
+          <li>Definition Data: <<b>dd</b>> </li>
+          Representa la deficion de los terminos listados antes que el.
+        </ol>
+        <pre>                 Lista ordenada:                          Lista desordenada:                          Lista de definicion:
+                  <<b>ol</b>>                                   <<b>ul</b>>                                         <<b>dl</b>>
+                  <<b>li</b>> Primer elemento <<b>/li</b>>             <<b>li</b>> Primer elemento <<b>/li</b>>                   <<b>dt</b>>Termino1
+                  <<b>li</b>> Segundo elemento <<b>/li</b>>            <<b>li</b>> Segundo elemento <<b>/li</b>>                  <<b>dd</b>>Definicion del Termino1
+                  <<b>li</b>> Tercer elemento <<b>/li</b>>             <<b>li</b>> Primer elemento <<b>/li</b>>                   <<b>dt</b>>Termino2
+                  <<b>/ol</b>>                                  <<b>/ul</b>>                                           <<b>dt</b>>Definicion del Termino2
+       </pre>                                                                                                        <<b>/dl</b>>
+        <li> Linea horizontal:</li>
+        La etiqueta <<b>hr</b>> representa una linea que sirve para separar parrafos de una seccion o articulo o cualquier contenido.
+    </ul>
+    <hr>
+    <h2><center>Semantica</center></h2>
+    <p> Hay diferentes tipos de elementos semanticos, pero los mas importantes son: </p>
+    <ul>
+      <li>Resaltado</li>
+        <ol>
+          <li>Bastardilla-Italic <<b>i</b>>:</li>
+            Pone en cursiva una palabra o un parrafo que este dentro de <<b>i</b>> <<b>/i</b>>.
+          <li>Negrita-Bold <<b>b</b>>: </li>
+            Pone en negrita una palabra o un parrafo que este dentro de <<b>b</b>> <<b>/b</b>>.
+          <li>Subrayada-Underlined <<b>u</b>>: </li>
+            Subraya una palabra o un parrafo que este dentro de <<b>u</b>> <<b>/u</b>>.
+          <li>Stress Emphasis <<b>em</b>>: </li>
+          Pone enfasis o recalca una parte del texto que este entre <<b>em</b>> <<b>/em</b>>.
+          <li>Strong <<b>strong</b>>: </li>
+          Parte importante,seria o urgente que este dentro de <<b>strong</b>> <<b>strong</b>>.
+          <li>Small <<b>small</b>>: </li>
+          Representa la "letra pequeña" (de un contrato..), tiene que estar entre <<b>small</b>> <<b>/small</b>>.
+          <li>S <<b>s</b>>: </li>
+          Representa contenido irrelevante u obsoleto, tiene que estar entre <<b>s</b>> <<b>/s</b>>
+        </ol>
+      <li>Salto de linea</li>
+        <ol>
+          <li>Break <<b>br</b>>: </li>
+          Representa un salto de lina despues de que pongas solo <<b>br</b>>
+          <li>Word Break <<b>wrb</b>>: </li>
+          Representa una oportunidad de salto de linea, es decir, un punto sugerido de envoltura donde el texto de multiples lineas puede ser dividido para mejorar su legibilidad.
+        </ol>
+      <li>Hiperenlace </li>
+    </ul>
+
 </body>
 </html>
