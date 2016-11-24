@@ -10,25 +10,38 @@
     <h1> FUNDAMENTOS HTML-5 </h1>
   </header>
     <h2><center>¿Que es HTML?</center></h2>
-      <p> HTML corresponde a las siglas en ingles de "HiperText Marck Lenguaje" y se puede traducir al español como "Lenguaje de Marcado de Hipertexto".
-      Es un lenguaje de marcado diseñado para estructurar textos y presentarlos en forma de hipertexto, que es el formato estandara de las paginas web.
-      Gracias a Internet y a los navegadores web, el HTML se ha convertido en uno de los formatos mas populares y faciles de aprendes que existen para la elaboracion
-      de documentos para web. Es un lenguaje de sentencias-etiquetas- de las cuales me indican que operaciones se van a realizar con el texto o con los atributos que
-      se esten manejando con ese sentencia-etiqueta-, la verdad estas secuencias son muy necesarias para el diseño de una pagina web ya que cada una de esas sentencias
-      le indican a intert como esta compuesto la estructura de cualquier Web.
+      <p> HTML corresponde a las siglas en ingles de "HiperText Marck Lenguaje"
+      y se puede traducir al español como "Lenguaje de Marcado de Hipertexto".
+      Es un lenguaje de marcado diseñado para estructurar textos y presentarlos
+      en forma de hipertexto, que es el formato estandara de las paginas web.
+      Gracias a Internet y a los navegadores web, el HTML se ha convertido en
+      uno de los formatos mas populares y faciles de aprendes que existen para
+      la elaboracion de documentos para web. Es un lenguaje de sentencias-etiquetas-
+      de las cuales me indican que operaciones se van a realizar con el texto
+      o con los atributos que se esten manejando con ese sentencia-etiqueta-,
+      la verdad estas secuencias son muy necesarias para el diseño de una pagina
+      web ya que cada una de esas sentencias le indican a intert como esta
+      compuesto la estructura de cualquier Web.
     </p>
     <hr>
     <h2><center> Etiqueta de HTML</center></h2>
-      <p>Las etiquetas tienen una estrctura simple. Comienza por un caracter <, y terminan con un caracter >. Entre los caracteres <> esta el nombre de la etiqueta,
-        y quizas algunos atributos dependiendo de la etiqueta.Su forma general es:
+      <p>Las etiquetas tienen una estrctura simple. Comienza por un caracter <,
+        y terminan con un caracter >. Entre los caracteres <> esta el nombre de
+        la etiqueta, y quizas algunos atributos dependiendo de la etiqueta.
+        Su forma general es:
       </p>
       <pre>     <_nombre de la etiqueta atributo1="valor1" ...></pre>
     <hr>
     <h2><center> Archivo HTML </center></h2>
-      <p> Para hacer un archivo HTML correctamente: hay que identificarlo como archivo HTML encerrandolo entre etiquetas <<b>!doctype html</b>> al principio.
-        Despues se pone <<b>html lang="es"</b>> para indentificar al documento HTML que esta en lenguaje español, esta etiqueta contiene un <<b>head</b>> que te permite
-        almacenar cierta informacion sobre el documento en si, tambien contiene <<b>body</b>>,dentro de esta tiene todo el contenido de la pagina que se ve a travez del
-        navegador web, despues de estas dos etiquetas se cierra todo con <<b>/html</b>>. Su estructura seria asi:
+      <p> Para hacer un archivo HTML correctamente: hay que identificarlo como
+        archivo HTML encerrandolo entre etiquetas <<b>!doctype html</b>> al
+        principio. Despues se pone <<b>html lang="es"</b>> para indentificar
+        al documento HTML que esta en lenguaje español, esta etiqueta contiene
+        un <<b>head</b>> que te permite almacenar cierta informacion sobre el
+        documento en si, tambien contiene <<b>body</b>>,dentro de esta tiene
+        todo el contenido de la pagina que se ve a travez del navegador web,
+        despues de estas dos etiquetas se cierra todo con <<b>/html</b>>.
+        Su estructura seria asi:
       </p>
       <pre>    <!doctype html>
                  <<b>html lang="es"</b>>      Inicio
@@ -40,21 +53,30 @@
       </pre>
       <hr>
       <h2><center> Metadatos</center> </h2>
-        <p> Las etiquetas de matadatos se deben añadir entre las etiquetas <<b>head</b>> </<b>head</b>> del codigo. Estas etiquetas contienen la informacion que se muestran
-          en las paginas de resultados de los diferentes buscadores. Los metadatos html mas habituales e importantes son:
+        <p> Las etiquetas de matadatos se deben añadir entre las etiquetas
+          <<b>head</b>> </<b>head</b>> del codigo. Estas etiquetas contienen la
+          informacion que se muestran en las paginas de resultados de los
+          diferentes buscadores. Los metadatos html mas habituales e importantes
+          son:
        </p>
-        <pre><ul>
-              <li>Title:</li>     <<b>title</b>><u>    </u> <<b>/title</b>> El titulo de la pagina que sale en el buscador.
-              <li>Charset</li>    <<b>meta charset="<u>utf-8</u>"</b>> Especifica la codificacion de caracteres para el documento.
-              <li>Name</li>      <<b>meta name="<u>author</u>" content="<u>Ray</u></b>>" Ponemos el nombre del autor de la pagina.
+       <pre>
+         <ul>
+            <li>Title:</li>     <<b>title</b>><u>    </u> <<b>/title</b>> El titulo de la pagina que sale en el buscador.
+            <li>Charset</li>    <<b>meta charset="<u>utf-8</u>"</b>> Especifica la codificacion de caracteres para el documento.
+            <li>Name</li>      <<b>meta name="<u>author</u>" content="<u>Ray</u></b>>" Ponemos el nombre del autor de la pagina.
         </ul>
       </pre>
       <hr>
       <h2><center> Articulo vs Seccion </center></h2>
-       <p> Una seccion usa las etiquetas <<b>section</b>  <<b>/section</b>>, esta pensada para agrupar los apartados del contenido del documento.
-           Una seccion puede contener varias secciones dentro tambien. Un articulo usa las etiquetas <<b>article</b>>  <<b>/article</b>>, esta pensado para agrupar
-           el contenido de la pagina que forma una unidad en si misma desde el punto de vista tematico, puede contener mas etiquetas de articulo en su interior.
-           Un elemento <<b>section</b>> puede contener elementos  <<b>article</b>> y viceversa.
+       <p> Una seccion usa las etiquetas <<b>section</b>  <<b>/section</b>>,
+         esta pensada para agrupar los apartados del contenido del documento.
+        Una seccion puede contener varias secciones dentro tambien. Un articulo
+        usa las etiquetas <<b>article</b>>  <<b>/article</b>>, esta pensado para
+        agrupar el contenido de la pagina que forma una unidad en si misma desde
+        el punto de vista tematico, puede contener mas etiquetas de articulo en
+        su interior.Un elemento <<b>section</b>> puede contener elementos
+        <<b>article</b>> y viceversa.
+      </p>
        <pre>
              <<b>article</b>>                       <<b>article</b>>
                 <<b>section</b>>                       <<b>section</b>>
@@ -65,25 +87,33 @@
        </pre>
       <hr>
       <h2><center> Secciones </cener></h2>
-        <p>Las secciones son las partes tematicas en las que se puede dividir el contenido de una pagina web.
-          Estas etiquetas van entre las etiquetas <<b>body</b>>  <<b>/body</b>> y son:
+        <p>Las secciones son las partes tematicas en las que se puede dividir el
+         contenido de una pagina web. Estas etiquetas van entre las etiquetas
+         <<b>body</b>>  <<b>/body</b>> y son:
         </p>
           <ul>
             <li>Encabezamiento:</li>
-             La etiqueta <<b>header</b>>  define la cabecera de una pagina o seccion. Usualmente contiene un logotipo,el titulo del sitio Web y una tabla de
-             navegacion de contenidos.
+             La etiqueta <<b>header</b>>  define la cabecera de una pagina o
+             seccion. Usualmente contiene un logotipo,el titulo del sitio Web y
+             una tabla de navegacion de contenidos.
             <li>Navegacion:</li>
-            La etiqueta <<b>nav</b>> define una seccion que solamente contiene enlaces de navegacion.
+            La etiqueta <<b>nav</b>> define una seccion que solamente contiene
+            enlaces de navegacion.
             <li>Titulos:</li>
-            Las etiquetas <<b>h1</b>>,<<b>h2</b>>.<<b>h3</b>>,<<b>h4</b>>,<<b>h5</b>> y <<b>h6</b>> implementan seis niveles de cabeceras de documentos,
+            Las etiquetas <<b>h1</b>>,<<b>h2</b>>.<<b>h3</b>>,<<b>h4</b>>,
+            <<b>h5</b>> y <<b>h6</b>> implementan seis niveles de cabeceras de
+            documentos,
             <<b>h1</b>> es la de mayor y <<b>h6</b>> es la de menor importancia.
             <li>Lateral:</li>
-            La etiqueta <<b>aside</b>> define algunos contenidos vagamente relacionados con el resto del contenido de la pagina.
+            La etiqueta <<b>aside</b>> define algunos contenidos vagamente
+            relacionados con el resto del contenido de la pagina.
             <li>Pie:</li>
-            La etiqueta <<b>footer</b>> define el pie de una pagina o seccion, suele contener un mensaje de derechos de autoria,enlaces a informacion lega o
-            direcciones para dar informacion.
+            La etiqueta <<b>footer</b>> define el pie de una pagina o seccion,
+            suele contener un mensaje de derechos de autoria,enlaces a
+            informacion lega o direcciones para dar informacion.
             <li>Direccion:</li>
-            La etiqueta <<b>adress</b>> define una seccion que contiene informacion de contacto.
+            La etiqueta <<b>adress</b>> define una seccion que contiene
+            informacion de contacto.
          </ul>
       <pre>
           <<b>header</b>>
@@ -99,12 +129,15 @@
       </pre>
       <hr>
       <h2><center>Agrupaciones</center></h2>
-      <p> Hay diferentes tipos de agrupaciones, pero las mas importantes son: </p>
+      <p> Hay diferentes tipos de agrupaciones, pero las mas importantes son:
+      </p>
       <ul>
         <li> Parrafos:</li>
-        Las etiquetas <<b>p</b>> <<b>p</b>> definen una parte que debe mostrarse como un parrafo.
+        Las etiquetas <<b>p</b>> <<b>p</b>> definen una parte que debe mostrarse
+        como un parrafo.
         <li> Texto perfomateado </li>
-        Las etiquetas <<b>pre</b>> <<b>pre</b>> indican que su contenido esta preformateado y que este formato debe ser preservado.
+        Las etiquetas <<b>pre</b>> <<b>pre</b>> indican que su contenido esta
+        preformateado y que este formato debe ser preservado.
         <li> Listas:</li>
         <ol>
           <li> Ordered List: <<b>ol</b>> </li>
@@ -114,7 +147,8 @@
           <li>List Item: <<b>li</b>> </li>
           Define un articulo de una lista.
           <li>Definition List: <<b>dl</b>> </li>
-          Define una lista de definiciones,es decir, una lista de terminos y sus deficiones asociadas.
+          Define una lista de definiciones,es decir, una lista de terminos y sus
+           deficiones asociadas.
           <li>Definition Term: <<b>dt</b>> </li>
           Representa un termino definido por el siguiente <<b>dd</b>>.
           <li>Definition Data: <<b>dd</b>> </li>
@@ -126,86 +160,118 @@
                   <<b>li</b>> Segundo elemento <<b>/li</b>>            <<b>li</b>> Segundo elemento <<b>/li</b>>                  <<b>dd</b>>Definicion del Termino1
                   <<b>li</b>> Tercer elemento <<b>/li</b>>             <<b>li</b>> Primer elemento <<b>/li</b>>                   <<b>dt</b>>Termino2
                   <<b>/ol</b>>                                  <<b>/ul</b>>                                           <<b>dt</b>>Definicion del Termino2
-       </pre>                                                                                                        <<b>/dl</b>>
+                                                                                                      <<b>/dl</b>>
+       </pre>
         <li> Linea horizontal:</li>
-        La etiqueta <<b>hr</b>> representa una linea que sirve para separar parrafos de una seccion o articulo o cualquier contenido.
+        La etiqueta <<b>hr</b>> representa una linea que sirve para separar
+        parrafos de una seccion o articulo o cualquier contenido.
     </ul>
     <hr>
     <h2><center>Semantica</center></h2>
-    <p> Hay diferentes tipos de elementos semanticos, pero los mas importantes son: </p>
+    <p> Hay diferentes tipos de elementos semanticos, pero los mas importantes
+      son:
+    </p>
     <ul>
       <li>Resaltado</li>
         <ol>
           <li>Bastardilla-Italic <<b>i</b>>:</li>
-            Pone en cursiva una palabra o un parrafo que este dentro de <<b>i</b>> <<b>/i</b>>.
+            Pone en cursiva una palabra o un parrafo que este dentro de
+            <<b>i</b>> <<b>/i</b>>.
           <li>Negrita-Bold <<b>b</b>>: </li>
-            Pone en negrita una palabra o un parrafo que este dentro de <<b>b</b>> <<b>/b</b>>.
+            Pone en negrita una palabra o un parrafo que este dentro de
+            <<b>b</b>> <<b>/b</b>>.
           <li>Subrayada-Underlined <<b>u</b>>: </li>
-            Subraya una palabra o un parrafo que este dentro de <<b>u</b>> <<b>/u</b>>.
+            Subraya una palabra o un parrafo que este dentro de <<b>u</b>>
+            <<b>/u</b>>.
           <li>Stress Emphasis <<b>em</b>>: </li>
-          Pone enfasis o recalca una parte del texto que este entre <<b>em</b>> <<b>/em</b>>.
+          Pone enfasis o recalca una parte del texto que este entre <<b>em</b>>
+          <<b>/em</b>>.
           <li>Strong <<b>strong</b>>: </li>
-          Parte importante,seria o urgente que este dentro de <<b>strong</b>> <<b>strong</b>>.
+          Parte importante,seria o urgente que este dentro de <<b>strong</b>>
+          <<b>strong</b>>.
           <li>Small <<b>small</b>>: </li>
-          Representa la "letra pequeña" (de un contrato..), tiene que estar entre <<b>small</b>> <<b>/small</b>>.
+          Representa la "letra pequeña" (de un contrato..), tiene que estar
+          entre <<b>small</b>> <<b>/small</b>>.
           <li>S <<b>s</b>>: </li>
-          Representa contenido irrelevante u obsoleto, tiene que estar entre <<b>s</b>> <<b>/s</b>>
+          Representa contenido irrelevante u obsoleto, tiene que estar entre
+          <<b>s</b>> <<b>/s</b>>
         </ol>
       <li>Salto de linea</li>
         <ol>
           <li>Break <<b>br</b>>: </li>
           Representa un salto de lina despues de que pongas solo <<b>br</b>>
           <li>Word Break <<b>wrb</b>>: </li>
-          Representa una oportunidad de salto de linea, es decir, un punto sugerido de envoltura donde el texto de multiples lineas puede ser dividido para mejorar su legibilidad.
+          Representa una oportunidad de salto de linea, es decir, un punto
+          sugerido de envoltura donde el texto de multiples lineas puede ser
+          dividido para mejorar su legibilidad.
         </ol>
       <li>Hiperenlace </li>
       Sirven para acceder desde una pagina a otra o a otro recurso disponible.
        <ol>
          <li>Externo</li>
-         El atributo href contiene la informacion de donde se encuentra el recurso. En este caso en un dominio externo.
+         El atributo href contiene la informacion de donde se encuentra el
+         recurso. En este caso en un dominio externo.
           <pre><<b>a href="<u>http://wwww.undominio.com</u>" target="_blank"><u>Undominio</u><</b>/a></pre>
-
          <li>Local</li>
-         En este caso href apunta a una pagina html que eseta en el mismo directorio que el documento que contiene el enlace.
+         En este caso href apunta a una pagina html que eseta en el mismo
+         directorio que el documento que contiene el enlace.
          <pre> <<b>a href="<u>pagina2.html</u>" target="_blank"><u>Ver esto</u> <</b>/a></pre>
          <li>Interno</li>
-         En este caso href apunta a una posicion dentro del documento en el que esta el enlace.
+         En este caso href apunta a una posicion dentro del documento en el que
+         esta el enlace.
          <pre> <<b>a href="<u>#ancla1</u>"><u>Ir a..</u><</b>a> </pre>
       </ul>
-      <p> Estamos usando el atributo <b>target</b> que indica donde se cargara el documento o recurso al que hacemos referencia.
-            y el valor <b>_blank</b> indica que cargemos el recurso en una nueva ventana del navegador.
+      <p> Estamos usando el atributo <b>target</b> que indica donde se cargara
+        el documento o recurso al que hacemos referencia y el valor
+        <b>_blank</b> indica que cargemos el recurso en una nueva ventana del
+        navegador.
       </p>
     <hr>
     <h2><center>Contenido Encajado:Imagenes</center></h2>
-    <p>Vamos a insertar imagenes dentro de una pagina web, para poner una imagen el codigo es:</p>
+    <p>Vamos a insertar imagenes dentro de una pagina web, para poner una imagen
+      el codigo es:
+    </p>
     <pre>
           <<b>img src="<u>imagen.jpg</u>"</b>>
     </pre>
-    <p>La etiqueta <<b>img</b>> tiene varias propiedas. El ancho y alto (width,height) se coloca en pixeles y deben corresponder al tamaño original
-      de la imagen para que no se distorsione.
+    <p>La etiqueta <<b>img</b>> tiene varias propiedas. El ancho y alto
+     (width,height) se coloca en pixeles y deben corresponder al tamaño original
+    de la imagen para que no se distorsione.
     </p>
     <pre>
-          <<b>img src="<u>imagen.jpg</u>"  width="<u>10</u>" height="<u>10</u>"</b>>
+    <<b>img src="<u>imagen.jpg</u>"  width="<u>10</u>" height="<u>10</u>"</b>>
     </pre>
-    <p> Tambien podemos usar un mapa de imagenes, es decir, podemos hacer que diferentes partes de una imagen tengan enlaces que nos permitan a ir a diferentes destinos.</p>
+    <p> Tambien podemos usar un mapa de imagenes, es decir, podemos hacer que
+      diferentes partes de una imagen tengan enlaces que nos permitan a ir a
+      diferentes destinos.
+    </p>
      <ul>
       <li>El tag map:</li>
-      Aqui tenemos que poner la etiqueta <<b>map name="<u>ejemplo1</u>"</b>> <<b>/map</b>>, aqui añadimos el nombre del mapa dentro del mapa van los demas atributos.
+      Aqui tenemos que poner la etiqueta <<b>map name="<u>ejemplo1</u>"</b>>
+      <<b>/map</b>>, aqui añadimos el nombre del mapa dentro del mapa van los
+      demas atributos.
       <li>Atributo area:</li>
-      El mapa de imagenes lleva un area dentro de la cual podremos pinchar para dirigirnos al destino que hayamos preestablecido <<b>area</b>>, dentro de area iran otros atributos.
+      El mapa de imagenes lleva un area dentro de la cual podremos pinchar
+      para dirigirnos al destino que hayamos preestablecido <<b>area</b>>,
+      dentro de area iran otros atributos.
       <li>Atributo shape:</li>
       Estre atributo va dentro de area y nos indica que tipo de area es.
         <ol>
           <li>shape="rect":</li>
-           Este tipo de area crea un mapa de imagen rectangular. Para definir la zona que incluira este mapa deberemos definir
-          la esquina superior del area y la esquina inferior derecha.
+           Este tipo de area crea un mapa de imagen rectangular. Para definir
+           la zona que incluira este mapa deberemos definir la esquina superior
+           del area y la esquina inferior derecha.
           <li>shape="circle":</li>
-          Este tipo de area crea un mapa de imagen circular. Nosotros solo debemos indicarle el centro de la circuferencia y el radio del mismo.
+          Este tipo de area crea un mapa de imagen circular. Nosotros solo
+          debemos indicarle el centro de la circuferencia y el radio del mismo.
           <li>shape="poly":</li>
-          Este tipo de area es la mas versatil de todas, ya que nos permite crear una zona personalizada. Debemos indicar los diferentes puntos de poligono y de una forma ordenada.
+          Este tipo de area es la mas versatil de todas, ya que nos permite
+          crear una zona personalizada. Debemos indicar los diferentes puntos de
+          poligono y de una forma ordenada.
         </ol>
       <li>Atributo coords:</li>
-      Aqui escribimos las coordenadas del area que vayamos a usar se escribe: coords="x,x,x,x", entiendo que cada "x" representa un punto de la imagen.
+      Aqui escribimos las coordenadas del area que vayamos a usar se escribe:
+      coords="x,x,x,x", entiendo que cada "x" representa un punto de la imagen.
         <ol>
           <li>rect:</li>
           "x-izq,y-sup,x-dcha, y-inf"
@@ -215,7 +281,8 @@
           "x1,y2,x2,y2,....,xN,yN"
         </ol>
       <li>Usemap:</li>
-      Aqui indicamos que imagen es la que llevara el mapa, este atributo se escribe: usemap="#x", siendo x el nombre del mapa de la imagen.
+      Aqui indicamos que imagen es la que llevara el mapa, este atributo se
+      escribe: usemap="#x", siendo x el nombre del mapa de la imagen.
     </ul>
   <pre>
         <<b>img usemap="#mapa"</b>>
@@ -225,18 +292,28 @@
   </pre>
   <hr>
 <h2><center>Tablas</center></h2>
-    <p>Las tablas en HTML te permiten mostrar un arreglo de celtas de datos:</p>
+    <p>Las tablas en HTML te permiten mostrar un arreglo de celtas de datos:
+    </p>
     <ol>
       <li>Las tablas se definen con la contenedora <<b>table</b>>.</li>
-      <li>La etiqueta <<b>table</b>> contiene reglones de celdas, definidos con la contenedora <<b>tr</b>>.</li>
-      <li>Cada etiqueta <<b>tr</b>> contiene celdas de datos, definidos con la contenedora <<b>td</b>>.<</li>
-      <li>Cada celda de datos contiene lo que quieras poner como imagenes,listas, incluso otras tablas.</li>
+      <li>La etiqueta <<b>table</b>> contiene reglones de celdas, definidos con
+        la contenedora <<b>tr</b>>.</li>
+      <li>Cada etiqueta <<b>tr</b>> contiene celdas de datos, definidos con la
+        contenedora <<b>td</b>>.<</li>
+      <li>Cada celda de datos contiene lo que quieras poner como imagenes,
+        listas, incluso otras tablas.</li>
     </ol>
     <p>Tambien tiene atributos y son:</p>
     <ol>
-      <li>El ataributo <b>border</b>, se usa para mostar un borde al rededos y entre las celdas de la tabla (en <b>table</b>).</li>
-      <li>El atributo <b>rowspan=x</b>, es una expansion en la columna, siendo x el numero de casillas que queremos ocupar (en <b>td</b> y <b>th</b>)</li>
-      <li>El atributos <b>colspand=x</b>, es una expasion en la fila, siendo x el numero de casillas que queremos ocupar (en <b>td</b> y <b>th</b>)</li>
+      <li>El ataributo <b>border</b>, se usa para mostar un borde al rededos y
+        entre las celdas de la tabla (en <b>table</b>).
+      </li>
+      <li>El atributo <b>rowspan=x</b>, es una expansion en la columna, siendo
+        x el numero de casillas que queremos ocupar (en <b>td</b> y <b>th</b>)
+      </li>
+      <li>El atributos <b>colspand=x</b>, es una expasion en la fila, siendo x
+        el numero de casillas que queremos ocupar (en <b>td</b> y <b>th</b>).
+      </li>
     </ol>
     <pre>
           <<b/>table border</b>>
@@ -251,9 +328,12 @@
    </pre>
    <hr>
    <h2><center>Editores</center></h2>
-   <p>Existen diverson editores para escribir el codigo desde muy simple como el bloc de notas hasta aplicaciones que te ayudan en la escritura.
-     Yo he usado  <a href="https://atom.io/" target="_blank">Atom</a>, pero existe otros como  <a href="https://brackets.io/" target="_blank">Brackets</a>,
-     <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>, <a href="http://www.bluegriffon.org/" target="_blank">BlueGriffon</a>, etc.
+   <p>Existen diverson editores para escribir el codigo desde muy simple como
+    el bloc de notas hasta aplicaciones que te ayudan en la escritura. Yo he
+    usado <a href="https://atom.io/" target="_blank">Atom</a>, pero existe otros
+    como <a href="https://brackets.io/" target="_blank">Brackets</a>,
+     <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>,
+     <a href="http://www.bluegriffon.org/" target="_blank">BlueGriffon</a>,etc.
      <hr>
    <footer>
     &copy;  <b>1996 Ray Ruiz</b>
